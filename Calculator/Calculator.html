@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Simple Calculator </title>
+	<link rel="stylesheet" href="cal.css">
+</head>
+	
+<body>
+	<h1><marquee>Hi, This is simple Calculator. Developed by Rajib Talukder.</marquee></h1>
+	
+	<div class="card">
+		<div class="header">
+			<input type="text" id="result" value="" maxlength="20"/>
+		</div>
+		
+		<div class="cal-body">
+			<div>
+				<input type="button" class="btn" id="cId" value="c" onclick="clr()">
+				<input type="button" class="btn" value="+-"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="%"  onclick="calculate(this.value)">
+				<input type="button" class="btn btn-style" value="/"  onclick="calculate(this.value)">
+			</div>
+			<div>
+				<input type="button" class="btn" value="7"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="8"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="9"  onclick="calculate(this.value)">
+				<input type="button" class="btn btn-style" value="*"  onclick="calculate(this.value)">
+			</div>
+				
+			<div>
+				<input type="button" class="btn" value="4"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="5"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="6"  onclick="calculate(this.value)">
+				<input type="button" class="btn btn-style" value="-"  onclick="calculate(this.value)">
+			</div>
+				
+			<div>
+				<input type="button" class="btn" value="1"  onclick="calculate(this.value)">
+				<input type="button" class="btn" value="2" onclick="calculate(this.value)">
+				<input type="button" class="btn" value="3" onclick="calculate(this.value)">
+				<input type="button" class="btn btn-style" value="+" onclick="calculate(this.value)">
+			</div>
+			<div>
+				<input type="button" class="btn" value="0" onclick="calculate(this.value)">
+				<input type="button" class="btn" value="." onclick="calculate(this.value)">
+				<input type="button" class="btn" value="DEL" onclick="back()">
+				<input type="button" class="btn" style="background-color:orange" value="=" onclick="equal()">
+			</div>
+				
+		</div>
+	</div>
+
+
+	<script src="Cal.js">
+
+	</script>
+</body>
+</html>
